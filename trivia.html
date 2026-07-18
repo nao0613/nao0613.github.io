@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nao Masuda | Trivia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. HEADER -->
+  <header class="site-header">
+    <h1>Nao Masuda</h1>
+    <p>Information Science &amp; Engineering, Ritsumeikan University</p>
+  </header>
+
+  <!-- 2. NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="trivia.html" class="active">Trivia</a>
+  </nav>
+
+  <div class="layout">
+
+    <!-- 3. LEFT SIDEBAR -->
+    <aside class="left">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.python.org/" target="_blank" rel="noopener">Python.org</a></li>
+        <li><a href="https://www.ritsumei.ac.jp/" target="_blank" rel="noopener">Ritsumeikan University</a></li>
+      </ul>
+    </aside>
+
+    <!-- 4. MAIN CONTENT: Trivia quiz -->
+    <main class="content">
+      <h2>Travel Trivia Quiz</h2>
+      <p>Answer the questions below and click <em>Check Answers</em>.
+         JavaScript will calculate your score instantly.</p>
+
+      <form class="quiz" id="quizForm">
+        <div class="question">
+          <p>1. In which Japanese prefecture is Ise Grand Shrine located?</p>
+          <label><input type="radio" name="q1" value="a"> Kyoto</label>
+          <label><input type="radio" name="q1" value="b"> Mie</label>
+          <label><input type="radio" name="q1" value="c"> Osaka</label>
+        </div>
+
+        <div class="question">
+          <p>2. Kiyomizu-dera Temple is famous in which city?</p>
+          <label><input type="radio" name="q2" value="a"> Kyoto</label>
+          <label><input type="radio" name="q2" value="b"> Tokyo</label>
+          <label><input type="radio" name="q2" value="c"> Seoul</label>
+        </div>
+
+        <div class="question">
+          <p>3. Lotte World, a huge indoor theme park, is in which country?</p>
+          <label><input type="radio" name="q3" value="a"> Japan</label>
+          <label><input type="radio" name="q3" value="b"> China</label>
+          <label><input type="radio" name="q3" value="c"> South Korea</label>
+        </div>
+
+        <div class="question">
+          <p>4. Kabukicho, known for its neon nightlife, is a district of which city?</p>
+          <label><input type="radio" name="q4" value="a"> Tokyo</label>
+          <label><input type="radio" name="q4" value="b"> Nagoya</label>
+          <label><input type="radio" name="q4" value="c"> Fukuoka</label>
+        </div>
+
+        <button type="submit">Check Answers</button>
+      </form>
+
+      <div class="result" id="quizResult">Your score will appear here.</div>
+    </main>
+
+    <!-- 5. RIGHT SIDEBAR: contact form -->
+    <aside class="right">
+      <h3>Contact Me</h3>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label for="cName">Name</label>
+        <input type="text" id="cName" name="name" placeholder="Your name">
+
+        <label for="cEmail">Email</label>
+        <input type="email" id="cEmail" name="email" placeholder="you@example.com">
+
+        <label for="cMsg">Message</label>
+        <textarea id="cMsg" name="message" placeholder="Your message"></textarea>
+
+        <button type="submit">Send</button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+    </aside>
+
+  </div>
+
+  <!-- 6. FOOTER -->
+  <footer class="site-footer">
+    <p>Created July 2026 &middot; &copy; 2026 Nao Masuda</p>
+    <p>
+      <a href="https://github.com/nao0613" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

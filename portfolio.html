@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nao Masuda | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. HEADER -->
+  <header class="site-header">
+    <h1>Nao Masuda</h1>
+    <p>Information Science &amp; Engineering, Ritsumeikan University</p>
+  </header>
+
+  <!-- 2. NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="trivia.html">Trivia</a>
+  </nav>
+
+  <div class="layout">
+
+    <!-- 3. LEFT SIDEBAR -->
+    <aside class="left">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.python.org/" target="_blank" rel="noopener">Python.org</a></li>
+        <li><a href="https://www.ritsumei.ac.jp/" target="_blank" rel="noopener">Ritsumeikan University</a></li>
+      </ul>
+    </aside>
+
+    <!-- 4. MAIN CONTENT -->
+    <main class="content">
+      <h2>Portfolio</h2>
+      <p>A selection of my projects, coursework, and creations.
+         (Feel free to edit these rows with your own work.)</p>
+
+      <table class="portfolio">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Travel Notes Website</td>
+            <td>A multi-page site with photo galleries, built with HTML &amp; CSS and hosted on GitHub Pages.</td>
+            <td>Jul 2026</td>
+            <td>Web</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Portfolio Website</td>
+            <td>This 3-page site (Home / Portfolio / Trivia) using external CSS and JavaScript.</td>
+            <td>Jul 2026</td>
+            <td>Web</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Python Data Script</td>
+            <td>A small Python program for processing and analyzing data in a course assignment.</td>
+            <td>May 2026</td>
+            <td>Python</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Trivia Quiz (JavaScript)</td>
+            <td>An interactive travel quiz that scores answers dynamically with JavaScript.</td>
+            <td>Jul 2026</td>
+            <td>JavaScript</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Information Systems Coursework</td>
+            <td>Assignments and exercises completed for the Information Systems Engineering course.</td>
+            <td>2026</td>
+            <td>Coursework</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <!-- 5. RIGHT SIDEBAR: contact form -->
+    <aside class="right">
+      <h3>Contact Me</h3>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label for="cName">Name</label>
+        <input type="text" id="cName" name="name" placeholder="Your name">
+
+        <label for="cEmail">Email</label>
+        <input type="email" id="cEmail" name="email" placeholder="you@example.com">
+
+        <label for="cMsg">Message</label>
+        <textarea id="cMsg" name="message" placeholder="Your message"></textarea>
+
+        <button type="submit">Send</button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+    </aside>
+
+  </div>
+
+  <!-- 6. FOOTER -->
+  <footer class="site-footer">
+    <p>Created July 2026 &middot; &copy; 2026 Nao Masuda</p>
+    <p>
+      <a href="https://github.com/nao0613" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
