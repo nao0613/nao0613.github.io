@@ -1,5 +1,3 @@
-/* ===== style.css — shared across all pages ===== */
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -11,7 +9,6 @@ body {
 
 a { color: #2a5ca8; }
 
-/* ===== Header ===== */
 header.site-header {
   background: linear-gradient(135deg, #7b9acc, #a8c0e0);
   color: #fff;
@@ -21,7 +18,6 @@ header.site-header {
 header.site-header h1 { font-size: 2rem; letter-spacing: 1px; }
 header.site-header p  { font-size: .95rem; opacity: .95; }
 
-/* ===== Navbar ===== */
 nav.navbar {
   background: #3f5b85;
   display: flex;
@@ -36,10 +32,9 @@ nav.navbar a {
   font-weight: 600;
   transition: background .2s, color .2s;
 }
-nav.navbar a:hover { background: #ffd166; color: #23324d; }   /* hover effect */
+nav.navbar a:hover { background: #ffd166; color: #23324d; }   
 nav.navbar a.active { background: #2c4262; }
 
-/* ===== Page layout: left sidebar | main | right sidebar ===== */
 .layout {
   display: grid;
   grid-template-columns: 220px 1fr 280px;
@@ -49,7 +44,6 @@ nav.navbar a.active { background: #2c4262; }
   padding: 0 16px;
 }
 
-/* Sidebars */
 aside {
   background: #fbfcfe;
   border: 1px solid #dde3ec;
@@ -69,7 +63,6 @@ aside ul li { margin-bottom: 10px; }
 aside ul li a { text-decoration: none; }
 aside ul li a:hover { text-decoration: underline; }
 
-/* Main content */
 main.content {
   background: #ffffff;
   border: 1px solid #dde3ec;
@@ -92,7 +85,6 @@ main.content img.home-img {
   display: block;
 }
 
-/* ===== Contact form (right sidebar) ===== */
 .contact-form label { display: block; font-size: .88rem; font-weight: 600; margin: 10px 0 4px; }
 .contact-form input,
 .contact-form textarea {
@@ -121,7 +113,6 @@ main.content img.home-img {
 .form-msg.error { color: #c0392b; }
 .form-msg.ok    { color: #1e8449; }
 
-/* ===== Portfolio table ===== */
 table.portfolio {
   width: 100%;
   border-collapse: collapse;
@@ -141,7 +132,6 @@ table.portfolio thead th {
 table.portfolio tbody tr:nth-child(even) { background: #f3f6fb; }
 table.portfolio tbody tr:hover { background: #e8eef8; }
 
-/* ===== Trivia quiz ===== */
 .quiz .question { margin-bottom: 18px; }
 .quiz .question p { font-weight: 600; margin-bottom: 6px; }
 .quiz label { display: block; margin: 4px 0; cursor: pointer; }
@@ -171,7 +161,6 @@ table.portfolio tbody tr:hover { background: #e8eef8; }
   border: 1px solid #c6cfdc; border-radius: 6px; font-size: .95rem;
 }
 
-/* ===== Footer ===== */
 footer.site-footer {
   background: #2c4262;
   color: #dbe4f3;
@@ -183,7 +172,6 @@ footer.site-footer {
 footer.site-footer a { color: #ffd166; text-decoration: none; margin: 0 8px; }
 footer.site-footer a:hover { text-decoration: underline; }
 
-/* ===== Responsive ===== */
 @media (max-width: 900px) {
   .layout { grid-template-columns: 1fr; }
   aside { order: 2; }
