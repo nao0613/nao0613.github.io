@@ -1,11 +1,7 @@
-/* ===== script.js — trivia logic + contact form validation ===== */
-
-/* ---------- Trivia quiz ---------- */
 (function () {
   const quiz = document.getElementById("quizForm");
-  if (!quiz) return; // only runs on the Trivia page
-
-  // Correct answers
+  if (!quiz) return; 
+  
   const answers = { q1: "b", q2: "a", q3: "c", q4: "a" };
   const total = Object.keys(answers).length;
 
@@ -20,7 +16,6 @@
       }
     }
 
-    // Dynamically update the result and give a category message
     let message;
     if (score === total)      message = "Perfect! You know your travel facts. 🎉";
     else if (score >= total / 2) message = "Nice work! Not bad at all.";
@@ -31,10 +26,9 @@
   });
 })();
 
-/* ---------- Contact form validation ---------- */
 (function () {
   const form = document.getElementById("contactForm");
-  if (!form) return; // present on every page
+  if (!form) return; 
 
   const msg = document.getElementById("formMsg");
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -46,7 +40,6 @@
     const email = form.email.value.trim();
     const text  = form.message.value.trim();
 
-    // Basic validation
     if (name === "" || email === "" || text === "") {
       msg.textContent = "Please fill in all fields.";
       msg.className = "form-msg error";
@@ -58,7 +51,6 @@
       return;
     }
 
-    // Success
     msg.textContent = "Thank you, " + name + "! Your message has been received.";
     msg.className = "form-msg ok";
     form.reset();
