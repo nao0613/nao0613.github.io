@@ -1,63 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website - Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nao Masuda | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Nao Masuda</h1>
-        <p>Information Science & Engineering, Ritsumeikan University</p>
-    </header>
 
-    <nav class="navbar">
-        <a href="index.html" class="active">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="trivia.html">Trivia</a>
-    </nav>
+  <!-- 1. HEADER -->
+  <header class="site-header">
+    <h1>Nao Masuda</h1>
+    <p>Information Science &amp; Engineering, Ritsumeikan University</p>
+  </header>
 
-    <div class="layout-container">
-        <aside class="sidebar left-sidebar">
-            <h3>Useful Links</h3>
-            <ul>
-                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-                <li><a href="https://www.ritsumei.ac.jp/" target="_blank">Ritsumeikan University</a></li>
-                <li><a href="https://travel.yahoo.co.jp/" target="_blank">Yahoo! Travel</a></li>
-            </ul>
-        </aside>
+  <!-- 2. NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="trivia.html">Trivia</a>
+  </nav>
 
-        <main class="main-content">
-            <h2>About Me</h2>
-            <img src="kyoto1.jpg" alt="Kyoto Cherry Blossoms" class="profile-img">
-            <p>Hello! I'm Nao Masuda, a third-year student at the College of Information Information Science and Engineering at Ritsumeikan University.</p>
-            <p>My primary tech interests include web development, database management, and cloud infrastructure frameworks. My core goal here at Ritsumeikan is to deeply master software architecture paradigms and apply technology to improve daily system workflow logistics.</p>
-            <p>Outside of studying, my hobbies include photography, traveling around historic cities, and discovering unique cafes.</p>
-        </main>
+  <!-- 3-5. LAYOUT: left sidebar | main | right sidebar -->
+  <div class="layout">
 
-        <aside class="sidebar right-sidebar">
-            <h3>Contact Me</h3>
-            <form id="contactForm">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your name" required minlength="2">
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="you@example.com" required>
-                
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Your message" required minlength="10"></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-            <div id="formFeedback" class="feedback"></div>
-        </aside>
-    </div>
+    <!-- 3. LEFT SIDEBAR: useful study links (open in new tab) -->
+    <aside class="left">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.ritsumei.ac.jp/" target="_blank" rel="noopener">Ritsumeikan University</a></li>
+        <li><a href="https://travel.yahoo.co.jp/" target="_blank" rel="noopener">Yahoo! Travel</a></li>
+      </ul>
+    </aside>
 
-    <footer class="footer">
-        <p>Created: July 2026 | Connect with me on <a href="https://github.com/nao0613" target="_blank">GitHub</a></p>
-    </footer>
+    <!-- 4. MAIN CONTENT -->
+    <main class="content">
+      <h2>About Me</h2>
+      <img class="home-img" src="kyoto1.jpg" alt="A place I have traveled to">
+      <p>Hello! I'm Nao Masuda, a third-year student in the College of Information
+         Science and Engineering at Ritsumeikan University.</p>
 
-    <script src="script.js"></script>
+      <h3>Tech Interests</h3>
+      <p>I'm interested in programming and web development. I mainly use
+         <strong>Python</strong>, and through this course I've been learning
+         HTML, CSS, and JavaScript to build websites like this one.</p>
+
+      <h3>My Goal at Ritsumeikan</h3>
+      <p>My goal is to strengthen my programming and information-systems skills,
+         and to build projects that combine data and the web. I also want to
+         improve my English so I can work on international teams.</p>
+
+      <h3>Hobbies</h3>
+      <p>Outside of study I enjoy <strong>playing video games</strong> and
+         <strong>traveling</strong>. I've visited Kyoto, Tokyo, Mie, and South Korea,
+         and I love discovering new places and food.</p>
+    </main>
+
+    <!-- 5. RIGHT SIDEBAR: contact form with validation -->
+    <aside class="right">
+      <h3>Contact Me</h3>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label for="cName">Name</label>
+        <input type="text" id="cName" name="name" placeholder="Your name">
+
+        <label for="cEmail">Email</label>
+        <input type="email" id="cEmail" name="email" placeholder="you@example.com">
+
+        <label for="cMsg">Message</label>
+        <textarea id="cMsg" name="message" placeholder="Your message"></textarea>
+
+        <button type="submit">Send</button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+    </aside>
+
+  </div>
+
+  <!-- 6. FOOTER -->
+  <footer class="site-footer">
+    <p>Created July 2026 &middot; &copy; 2026 Nao Masuda</p>
+    <p>
+      <a href="https://github.com/nao0613" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
